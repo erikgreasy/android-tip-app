@@ -55,6 +55,7 @@
         android:layout_marginStart="16dp"
         app:layout_constraintStart_toEndOf="@id/icon_service_question"
         app:layout_constraintTop_toBottomOf="@id/cost_of_service"
+        style="@style/Widget.TipCalculator.TextView"
         />
 
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
@@ -68,15 +69,21 @@
         <RadioButton android:id="@+id/option_twenty_percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/amazing_20"/>
+            android:text="@string/amazing_20"
+            style="@style/Widget.TipCalculator.CompoundButton.RadioButton"
+            />
         <RadioButton android:id="@+id/option_eighteen_percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/good_18"/>
+            android:text="@string/good_18"
+            style="@style/Widget.TipCalculator.CompoundButton.RadioButton"
+            />
         <RadioButton android:id="@+id/option_fifteen_percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/okay_15"/>
+            android:text="@string/okay_15"
+            style="@style/Widget.TipCalculator.CompoundButton.RadioButton"
+            />
     </RadioGroup>
 
     <ImageView
@@ -99,6 +106,7 @@
         app:layout_constraintTop_toBottomOf="@id/tip_options"
         android:checked="true"
         android:text="@string/round_up_tip"
+        style="@style/Widget.TipCalculator.CompoundButton.Switch"
         />
 
     <Button
@@ -119,6 +127,7 @@
         app:layout_constraintTop_toBottomOf="@id/calculate_button"
         android:layout_marginTop="8dp"
         tools:text="Tip Amount: $10"
+        style="@style/Widget.TipCalculator.TextView"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
